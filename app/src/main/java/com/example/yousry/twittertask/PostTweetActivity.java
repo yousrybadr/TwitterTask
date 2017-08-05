@@ -24,7 +24,7 @@ public class PostTweetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_post_tweet);
 
 
-        Token token = new Token("token_access", "token_secret");
+        /*Token token = new Token("token_access", "token_secret");
         Credential c = new Credential("user_name", "consumer_key", "consumer_secret", token);
         UserAccountManager m = UserAccountManager.getInstance(c);
 
@@ -33,7 +33,7 @@ public class PostTweetActivity extends AppCompatActivity {
             Tweet t = new Tweet("Cool! Geo-located Tweet via Twitter API ME. \o/", loc);
             TweetER ter = TweetER.getInstance(m);
             t = ter.post(t);
-        }
+        }*/
 
         backgroundTask =new BackgroundTask(PostTweetActivity.this);
         backgroundTask.setURL_KEY(URL);
